@@ -1,4 +1,4 @@
-require './input_functions'
+
 require 'artii'
 require 'CSV'
 
