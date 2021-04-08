@@ -128,7 +128,7 @@ end
 def main()
     records = []
     finished = false
-    records_file_name = 'records.csv'
+    records_file_name = './lib/records.csv'
 
     title = Artii::Base.new
     puts title.asciify('WaxMuseum')
