@@ -24,7 +24,7 @@
 WaxMuseum is a terminal application that allows a user to archive a collection of records by taking users input. The user is prompt with questions such as "Artist Name" and "Album Name" and their input will be locally stored in a file and display an enumerated list. The target audience of WaxMuseum is a constantly growing community of record collector who like to keep track of their current collection.
 The purpose of this application is to simplify the way the user interacts with the computer to input their record data. By having questions prompted on screen this will reduce the ammount of time spend using mouse input and reducing error margin by automatically populating data on a spreadsheet. According to Statista.com, Vinyl sales have reached 27.5 million in the United States alone, which leads to a great oppourtunity for this application. To use WaxMuseum, the user will download the source from GitHub.com, and install the correct bundle of gems as instructed. Then, from the terminal and from the root folder they will be able to run the application.
 
-![Statista Record Sales](Images/example.png)
+![Statista Record Sales](img/Statista-record-sales.jpeg)
 
 <br>
 
@@ -85,3 +85,18 @@ If the a the .CSV file containing the Record Collection data, cannot be found, i
 
 [Trello](https://trello.com/b/kuzF9IeH/wax-museum)
 ![Trello Board Screenshot](img/Trello-screenshot.png)
+
+## R10 : Instructions :
+---
+
+### How to install WaxMuseum :
+
+### Requirements
+- ruby 2.7.2
+- MacOS or Linux
+<br>
+
+## R3 : Reference Attribution:
+---
+
+R5 :
