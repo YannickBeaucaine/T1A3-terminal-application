@@ -111,3 +111,43 @@ def load_albums(records_file_name)
 
     return records
 end 
+
+def main()
+    records = []
+    finished = false
+    records_file_name = 'records.csv'
+
+    title = Artii::Base.new
+    puts title.asciify('WaxMuseum')
+
+    records  = load_albums(records_file_name)
+    
+    while finished == false
+        puts("---------Menu------------")
+        puts("1. Display Collection")
+        puts("2. Add Record to Collection")
+        puts("3: Edit Record")
+        puts("4: Remove Record")
+        puts("5: Exit")
+    
+        selection = read_integer("Choose an option : ")
+        case selection
+        when 1
+            display_records(records)
+        when 2
+            add_record(records)
+        when 3
+            edit_record(records)
+        when 4
+            remove_record(records)
+        when 5
+            save_records(records_file_name,records)
+            finished = true
+        else
+            puts("Enter options between 1 to 5 ")
+        end
+        
+    end
+end
+
+main()
