@@ -76,10 +76,12 @@ If the a the .CSV file containing the Record Collection data, cannot be found, i
 ## R8 : WaxMuseum App Control flow chart:
 ---
 
+![Control Flow](img/T1A3flowchart.png)
+
 <br>
 
 ## R9 : Project Management :
 ---
 
 [Trello](https://trello.com/b/kuzF9IeH/wax-museum)
-![Trello Board Screenshot](Images/example.png)
+![Trello Board Screenshot](img/Trello-screenshot.png)
