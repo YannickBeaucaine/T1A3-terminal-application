@@ -77,3 +77,37 @@ def display_records(records)
         i +=1
     end 
 end 
+
+def read_record(record,record_number)
+    
+    artist = record[record_number]['artist']
+    album = record[record_number]['album']
+    yearofrelease = record[record_number]['year of release']
+    record = Record.new(artist,album,yearofrelease)
+    return record
+end 
+
+def read_records(table)
+    number_of_record = table.length.to_i
+    records =  Array.new()
+
+    for i in 0...number_of_record
+        records << read_record(table,i)
+    end 
+    
+    return  records
+end 
+
+def load_albums(records_file_name)
+    
+    if(File.exist?(records_file_name))            
+        table = CSV.parse(File.read(records_file_name), headers: true)
+        records = read_records(table)
+        puts "Collection Loaded Succesfully"   
+        
+    else
+        puts 'File does not exists.Please check if the file is present and the name is correct'
+    end 
+
+    return records
+end 
