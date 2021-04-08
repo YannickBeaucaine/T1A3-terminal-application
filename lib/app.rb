@@ -1,3 +1,9 @@
+require './input_functions'
+require 'artii'
+require 'CSV'
+
+
+
 class Record
 	attr_accessor :artist, :album, :yearofrelease
 	def initialize (artist,album, yearofrelease)
@@ -7,6 +13,8 @@ class Record
         @yearofrelease = yearofrelease
 	end
 end
+
+
 
 def add_record(records)
     artistname = read_string("Please enter artist name :")
@@ -19,6 +27,7 @@ def add_record(records)
     puts "Record has been added to your collection"
 
 end
+
 
 def edit_record(records)
     
@@ -78,6 +87,8 @@ def display_records(records)
     end 
 end 
 
+
+
 def read_record(record,record_number)
     
     artist = record[record_number]['artist']
@@ -111,6 +122,8 @@ def load_albums(records_file_name)
 
     return records
 end 
+
+        
 
 def main()
     records = []
