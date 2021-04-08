@@ -64,3 +64,16 @@ def save_records(records_file_name,records)
     puts "Collection Saved Succesfully"
 
 end 
+
+def display_record(record,index)
+    puts "#{index+1}. #{record.artist} - #{record.album} - #{record.yearofrelease}"
+end 
+
+
+def display_records(records)
+    i = 0;
+    while i < records.length
+        display_record(records[i],i)
+        i +=1
+    end 
+end 
