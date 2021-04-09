@@ -21,8 +21,8 @@
 ## R5 : Statement of purpose :
 ---
 
-WaxMuseum is a terminal application that allows a user to archive a collection of records by taking users input. The user is prompt with questions such as "Artist Name" and "Album Name" and their input will be locally stored in a file and display an enumerated list. The target audience of WaxMuseum is a constantly growing community of record collector who like to keep track of their current collection.
-The purpose of this application is to simplify the way the user interacts with the computer to input their record data. By having questions prompted on screen this will reduce the ammount of time spend using mouse input and reducing error margin by automatically populating data on a spreadsheet. According to Statista.com, Vinyl sales have reached 27.5 million in the United States alone, which leads to a great oppourtunity for this application. To use WaxMuseum, the user will download the source from GitHub.com, and install the correct bundle of gems as instructed. Then, from the terminal and from the root folder they will be able to run the application. A Bash script is provided to automatically install required gems and run the program directly.
+WaxMuseum is a terminal application that allows a user to archive a collection of records by taking data from users input. The user is prompted with questions such as "Artist Name" and "Album Name" and their input will be locally stored in a file and display an enumerated list on request. The target audience of WaxMuseum is a constantly growing community of record collector who likes to keep track of their current collection.
+The purpose of this application is to simplify the way the user interacts with the computer to input their record collection data. By having questions prompted on screen this will reduce the ammount of time spend using mouse input and reducing error margin by automatically populating data on a spreadsheet. According to Statista.com, Vinyl sales have reached 27.5 million in the United States alone, which leads to a great oppourtunity for this application. To use WaxMuseum, the user will download the source from GitHub.com, and install the correct bundle of gems as instructed. Then, from the terminal and from the root folder they will be able to run the application. A Bash script is provided to automatically install required gems and run the program directly.
 
 ![Statista Record Sales](img/Statista-record-sales.jpeg)
 
@@ -34,34 +34,36 @@ The purpose of this application is to simplify the way the user interacts with t
 - ### Selectable Menu : 
  A simple UI that allows the user
  to navigate through different functions of the terminal application.
+ The menu will ask the user for a feature selection with a number.The user will be welcomed with the menu when the application starts.
 
  - ### Add,Edit Remove :
  Flexible record collection editing functions.
- The ability to Add a record to your collection in the simplest way possible makes it easy to keep track. The editing function will override previous data and removing the record will update the save file.
+ The ability to Add a record to your collection in the simplest way possible makes it easy to keep track of actions taken. The editing function will override previous data and removing the record do as such by requesting a record index number.
 
  - ### Persistent Storage :
 The Application makes use of persistent storage.
 Uers input is saved to a .CSV file. The file can also be editied externally 
-and loaded trough the App. This allows for the user to save and store their Record collection permanantely 
+and loaded through the App. This allows for the user to save and store their Record collection permanantely. New additions to the collection will be automatically populated at the bottom of the list.
 
-## Upcoming Updates
+## Future Updates
 
 - ### Increased Record Information:
-Abilty to add additional data for the record such as Genre, Gustom record number,
-Physical codition of the record and other...
+Abilty to add additional data for the record such as Genre, custom record ID,
+Physical condition of the record and other...
 
 - ### Advanced Search function :
 Ability to search for a record by index number, artist name or genre.
+Sorting recors by alphabetical order,  date and such...
 
 <br>
 
 ## R7 : UX Outline:
 ---
 
-Upon launching, the user will be Welcomed with a logo art and the main menu.
-The Menu shows all possible functions from the app. The user will be asked to choose an option by typing the number of one of the options between 1 and 5.
-When the option 1 is chosen the entire collection of the user will be displayed indexed. With option 2 the user can add a record to their collection, The user will be prompted with questions about the record that will be entered and saved.
-Option 3 allow the user to edit a previous entry by entering the index number of the record, the nsame questions as option 2 will be prompted again and the new entries will override previous input. Option 4 will delete an existing record from the collection by entering the records index number. Option 5 will exit the application and store data to CSV file.
+Upon launching, the user will be Welcomed with a logo art as and land directly on the main menu.
+The Menu shows all possible current functions from the app. The user will be asked to choose an option by typing the number of one of the options between 1 and 5.
+When the option 1 is chosen, the entire collection of the user will be displayed indexed and the user will be sent back to the main menu. With option 2 the user can add a record to their collection, The user will be prompted with questions about the record that will be entered then return to the main menu.
+Option 3 allows the user to edit a previous entry by entering the index number of the record, the same questions as option 2 will be prompted again and the new entries will override previous input then return to the main menu. Option 4 will delete an existing record from the collection by entering the records index number, a confirmation message will appear. Option 5 will exit the application and store data to CSV file.
 
 - ### Error Handling : 
 
